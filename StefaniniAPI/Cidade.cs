@@ -9,9 +9,9 @@ namespace StefaniniAPI
 
         //Members
         [StringLength(200)]
-        public string CidadeNome { get; set; } = string.Empty;
+        public string Nome { get; set; } = string.Empty;
 
         [StringLength(2)]
-        public string Uf { get; set; } = string.Empty;
+        public string UF { get; set; } = string.Empty;
     }
 }

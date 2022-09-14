@@ -12,9 +12,9 @@ namespace StefaniniAPI
         public string Nome { get; set; } = string.Empty;
 
         [StringLength(11)]
-        public string Cpf { get; set; } = string.Empty;
+        public string CPF { get; set; } = string.Empty;
 
-        public int CidadeId { get; set; }
+        public int Id_Cidade { get; set; }
 
         public Cidade? Cidade { get; set; }
 

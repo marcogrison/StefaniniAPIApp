@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using StefaniniAPI.Data;
 
@@ -24,6 +25,7 @@ builder.Services.AddCors(options =>
         builder =>
         {
             builder.WithOrigins("http://localhost:4200")
+            .AllowCredentials()
             .AllowAnyMethod()
             .AllowAnyHeader();
         });
